@@ -1,0 +1,364 @@
+fileFormatVersion: 2
+guid: 80385a519d490494294820f91ca94969
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8218715562071989814
+    second: png-klev-club-3xzy-p-anime-akhegao-png-11_0
+  - first:
+      213: -6953327882080530380
+    second: png-klev-club-3xzy-p-anime-akhegao-png-11_1
+  - first:
+      213: 8920700066599745666
+    second: png-klev-club-3xzy-p-anime-akhegao-png-11_2
+  - first:
+      213: 1394933923423219721
+    second: png-klev-club-3xzy-p-anime-akhegao-png-11_3
+  - first:
+      213: -8356239796379075209
+    second: png-klev-club-3xzy-p-anime-akhegao-png-11_4
+  - first:
+      213: -18354743355628338
+    second: png-klev-club-3xzy-p-anime-akhegao-png-11_5
+  - first:
+      213: -2700982419398256369
+    second: png-klev-club-3xzy-p-anime-akhegao-png-11_6
+  - first:
+      213: -8179828793909485061
+    second: png-klev-club-3xzy-p-anime-akhegao-png-11_7
+  - first:
+      213: 5037238234436524503
+    second: png-klev-club-3xzy-p-anime-akhegao-png-11_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: png-klev-club-3xzy-p-anime-akhegao-png-11_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 465
+        width: 174
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e9643524ebe0270800000000000000
+      internalID: 8218715562071989814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-klev-club-3xzy-p-anime-akhegao-png-11_1
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 463
+        width: 49
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43055cda121d08f90800000000000000
+      internalID: -6953327882080530380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-klev-club-3xzy-p-anime-akhegao-png-11_2
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 466
+        width: 161
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2883b795271bccb70800000000000000
+      internalID: 8920700066599745666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-klev-club-3xzy-p-anime-akhegao-png-11_3
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 449
+        width: 66
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90078ce330dcb5310800000000000000
+      internalID: 1394933923423219721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-klev-club-3xzy-p-anime-akhegao-png-11_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 233
+        width: 505
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77db7dead2ca80c80800000000000000
+      internalID: -8356239796379075209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-klev-club-3xzy-p-anime-akhegao-png-11_5
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 437
+        width: 99
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4285a457acebff0800000000000000
+      internalID: -18354743355628338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-klev-club-3xzy-p-anime-akhegao-png-11_6
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 213
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f09113bccce248ad0800000000000000
+      internalID: -2700982419398256369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-klev-club-3xzy-p-anime-akhegao-png-11_7
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 40
+        width: 165
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1638fec096b7e80800000000000000
+      internalID: -8179828793909485061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-klev-club-3xzy-p-anime-akhegao-png-11_8
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 175
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9da9c5c7dd7e540800000000000000
+      internalID: 5037238234436524503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      png-klev-club-3xzy-p-anime-akhegao-png-11_0: 8218715562071989814
+      png-klev-club-3xzy-p-anime-akhegao-png-11_1: -6953327882080530380
+      png-klev-club-3xzy-p-anime-akhegao-png-11_2: 8920700066599745666
+      png-klev-club-3xzy-p-anime-akhegao-png-11_3: 1394933923423219721
+      png-klev-club-3xzy-p-anime-akhegao-png-11_4: -8356239796379075209
+      png-klev-club-3xzy-p-anime-akhegao-png-11_5: -18354743355628338
+      png-klev-club-3xzy-p-anime-akhegao-png-11_6: -2700982419398256369
+      png-klev-club-3xzy-p-anime-akhegao-png-11_7: -8179828793909485061
+      png-klev-club-3xzy-p-anime-akhegao-png-11_8: 5037238234436524503
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

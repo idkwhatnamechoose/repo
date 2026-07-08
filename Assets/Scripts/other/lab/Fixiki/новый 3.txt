@@ -1,0 +1,10 @@
+if(voiceAudio.isPlaying == true)
+			    {
+			    	mouth[current].SetActive(true);
+			    	mouth[current].GetComponent<Animator>().SetBool("telling", true);
+			    }
+			    else if(voiceAudio.isPlaying == false)
+			    {
+			    	///mouth[current].SetActive(true);
+			    	mouth[current].GetComponent<Animator>().SetBool("telling", false);
+			    }
