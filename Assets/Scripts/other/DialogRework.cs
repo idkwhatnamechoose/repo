@@ -16,7 +16,6 @@ public class DialogRework : MonoBehaviour
 	public string[] context;
 	public string[] EnglishContext;
 	public string[] SpanishContext;
-	private int index = 0;
 	public int textCollection;
 	int current = 0;
 	///public Text txt;
@@ -24,7 +23,7 @@ public class DialogRework : MonoBehaviour
 	public float letterDelay = 0.1f;
 	public GameObject pl;
 	public GameObject dialogWindow;
-	AudioSource audio;
+	AudioSource audioSource;
 	public AudioClip mediaFile;
 	float pitchForAudio;
 	double d;
@@ -48,7 +47,7 @@ public class DialogRework : MonoBehaviour
 			lang = PlayerPrefs.GetString("lang");
 dialogWindow.SetActive(true);
         pl = GameObject.FindGameObjectWithTag("Player");
-		audio = GetComponent<AudioSource>();
+		audioSource = GetComponent<AudioSource>();
 		if(startRightNow == true)
 		{
 			txt.SetText("test");
@@ -236,16 +235,16 @@ dialogWindow.SetActive(true);
 			textToShowWarn = text;
 		pitchForAudio = UnityEngine.Random.Range(0.7f, 1f);
 		double d = (double) pitchForAudio;
-		///audio.pitch = pitchForAudio;
+		///audioSource.pitch = pitchForAudio;
         int i = 0;
 
         while (i <= text.Length)
         {
 			pitchForAudio = UnityEngine.Random.Range(0.999f, 1f);
-			audio.PlayOneShot(mediaFile);
-			///audio.clip = mediaFile;
-			///audio.Play();
-			///audio.volume = pitchForAudio;
+			audioSource.PlayOneShot(mediaFile);
+			///audioSource.clip = mediaFile;
+			///audioSource.Play();
+			///audioSource.volume = pitchForAudio;
             ///txt.text = text.Substring(0, i);
             i++;
 

@@ -39,6 +39,7 @@ public class Bool : MonoBehaviour
       if(state == 0)
       {
         Debug.Log("параметр " + saveVariable + " включён");
+        Debug.Log("porn");
         state = 1;
 
 

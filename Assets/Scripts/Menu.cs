@@ -12,12 +12,12 @@ public class Menu : MonoBehaviour
     public void LoadPlayerLevel(string levelName)
     {
       PlayerPrefs.SetString("levelName", levelName);
-      Application.LoadLevel("LevelLoader");
+      UnityEngine.SceneManagement.SceneManager.LoadScene("LevelLoader");
     }
     public void LoadLevel(string levelName)
     {
 
-      Application.LoadLevel(levelName);
+      UnityEngine.SceneManagement.SceneManager.LoadScene(levelName);
     }
     public void ClickURL(string url)
     {

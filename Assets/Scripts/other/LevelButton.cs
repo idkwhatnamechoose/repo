@@ -16,7 +16,7 @@ public class LevelButton : MonoBehaviour
 		string levelName;
 		levelName = "Level";
 		levelName = levelName + numberOfLevel;
-		Application.LoadLevel(levelName);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(levelName);
 	}
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

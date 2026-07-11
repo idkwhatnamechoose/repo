@@ -4,11 +4,11 @@ public class Coin : MonoBehaviour
 {
 	public int cost;
 	public GameObject saves;
-	public AudioSource audio;
+	public AudioSource audioSource;
 	public GameObject coinAnimGotLost;
 	public void Detected()
 	{
-		audio.Play();
+		audioSource.Play();
 		saves.GetComponent<SavesSystem>().coins += cost;
 		GetComponent<BoxCollider2D>().enabled = false;
 		///GetComponent<Animator>().Play("gotCoin");
@@ -16,11 +16,11 @@ public class Coin : MonoBehaviour
 		Destroy(this.gameObject);
 	}
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
+	void Start()
+	{
 		saves = GameObject.FindGameObjectWithTag("Player");
-     audio = GetComponent<AudioSource>();   
-    }
+	 audioSource = GetComponent<AudioSource>();   
+	}
 
     // Update is called once per frame
     void Update()

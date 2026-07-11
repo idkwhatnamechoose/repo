@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class MapButton : MonoBehaviour
 {
     string state = "unactive"; //unactive - уровень закрыт, completed - уровень уже пройден и всё ещё открыт, inprogress - уровень ещё не прошли, но он открыт
@@ -24,8 +25,8 @@ public class MapButton : MonoBehaviour
 
         if(canPlay != false)
         {
-           levelName = prefix + levelNumber;
-           Application.LoadLevel(levelName);
+        levelName = prefix + levelNumber;
+        SceneManager.LoadScene(levelName);
         } else 
         {
             Debug.Log("Уровень ещё закрыт -_-");

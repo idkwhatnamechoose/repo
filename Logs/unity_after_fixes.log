@@ -1,0 +1,23 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.4/staging' branch; Version is '6000.4.11f1 (b0a1d6caadd2) revision 11575766'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.28020) Professional' Language: 'ru' Physical Memory: 32546 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-RobotComp" at "2026-07-09T12:53:03.2039622Z"
+System  architecture: x64
+Process architecture: x64
+Date: 2026-07-09T12:53:03Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.4.11f1\Editor\Unity.exe
+-batchmode
+-nographics
+-projectPath
+c:\Users\RobotComp\Documents\GitHub\GSTOP\kubby_copy
+-executeMethod
+ProjectHealthCheck.Run
+-logFile
+c:\Users\RobotComp\Documents\GitHub\GSTOP\kubby_copy\Logs\unity_after_fixes.log
+-quit
+Successfully changed project path to: c:\Users\RobotComp\Documents\GitHub\GSTOP\kubby_copy
+C:/Users/RobotComp/Documents/GitHub/GSTOP/kubby_copy
+Exiting without the bug reporter. Application will terminate with return code 1

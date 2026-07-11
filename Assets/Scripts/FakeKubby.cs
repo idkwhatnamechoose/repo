@@ -13,7 +13,7 @@ public class FakeKubby : MonoBehaviour
 	public float timeout;
 	public float time;
 	Vector3 vect;
-  public AudioSource audio;
+	public AudioSource audioSource;
 	public bool detect;
 	public Transform posPlayer;
 	public float runSpeed = 5f;
@@ -40,13 +40,13 @@ public class FakeKubby : MonoBehaviour
   float xMe;
   public bool turnOffOnStart = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Awake()
-    {
-			audio = GetComponent<AudioSource>();
+	    void Awake()
+	    {
+		    audioSource = GetComponent<AudioSource>();
 		pl = GameObject.FindGameObjectWithTag("Player");
         whichPoint = 0;
 		anim.SetBool("walk", true);
-    rb = GetComponent<Rigidbody2D>();
+		rb = GetComponent<Rigidbody2D>();
 		enemy.position = points[1].position;
 		fake = transform.position;
 		point1Vec = points[0].position;
@@ -113,7 +113,7 @@ public class FakeKubby : MonoBehaviour
 		}
 		if(detect == true && forBoss == false)
 		{
-			rb.isKinematic = false;
+			rb.bodyType = RigidbodyType2D.Dynamic;
 			time += 1 * Time.deltaTime;
 			if(time > maxTime)
 			{
@@ -179,7 +179,7 @@ public class FakeKubby : MonoBehaviour
 			{
 				anim.SetBool("walk", false);
 			    anim.SetBool("falling", false);
-			    rb.isKinematic = true;
+				rb.bodyType = RigidbodyType2D.Kinematic;
 			}
 			
 			///anim.SetBool("looking", true);
@@ -193,7 +193,7 @@ public class FakeKubby : MonoBehaviour
 				whichPoint = 0;
 			}
 			///CallTrigger();
-			rb.isKinematic = false;
+			rb.bodyType = RigidbodyType2D.Dynamic;
 			anim.SetBool("walk", true);
 			time = 0;
 		}

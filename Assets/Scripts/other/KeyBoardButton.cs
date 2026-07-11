@@ -32,7 +32,7 @@ public class KeyBoardButton : MonoBehaviour
 		}
 		if(command == "level")
 		{
-			Application.LoadLevel(levelName);
+			UnityEngine.SceneManagement.SceneManager.LoadScene(levelName);
 		}
 		if(command == "hideGameObject")
 		{

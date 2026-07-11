@@ -5,7 +5,7 @@ public class normalCaveKubby : MonoBehaviour
 	public float time;
 	public Transform ownCamera;
 	public GameObject ownCameraObject;
-	public GameObject camera;
+	public GameObject mainCamera;
 	public GameObject player;
 	public GameObject playerParent;
 	public Transform pointForKubby;
@@ -27,14 +27,14 @@ public class normalCaveKubby : MonoBehaviour
 		time = 0;
 		ownCameraObject.SetActive(true);
 		hide = true;
-		ownCamera.position = camera.transform.position;
+		ownCamera.position = mainCamera.transform.position;
 		animTransform.position = player.transform.position;
 		isWorking = true;
 	}
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        camera = GameObject.FindGameObjectWithTag("MainCamera");
+        mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
 		player = GameObject.FindGameObjectWithTag("Player");
 		playerParent = GameObject.FindGameObjectWithTag("PlayerParent");
 		
@@ -52,7 +52,7 @@ public class normalCaveKubby : MonoBehaviour
 				player.transform.position = pointForKubby.position;
 				playerParent.SetActive(true);
 				///camera.SetActive(true);
-				camera.transform.position = pointForCamera.position;
+				GetComponent<Camera>().transform.position = pointForCamera.position;
 				player.GetComponent<Rigidbody2D>().AddForce(new Vector3(dropForce, 100f, 0f));
 				hide = false;
 			}

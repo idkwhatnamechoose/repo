@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WaitToLoadLevel : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class WaitToLoadLevel : MonoBehaviour
         time += 1 * Time.deltaTime;
         if(time > maxTime)
         {
-          Application.LoadLevel(whichLevel);
+          SceneManager.LoadScene(whichLevel);
         }
     }
 }

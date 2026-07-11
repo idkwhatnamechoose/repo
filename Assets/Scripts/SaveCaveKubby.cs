@@ -21,7 +21,7 @@ public class SaveCaveKubby : MonoBehaviour
     player.GetComponent<AnimatorKubby>().anim.SetBool("sit", false);
     player.GetComponent<AnimatorKubby>().anim.Play("idleKubby");
 
-    player.GetComponent<Rigidbody2D>().isKinematic = true;
+    player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
     ///player.GetComponent<BoxCollider2D>().enabled = false;
     enabl = true;
 
@@ -62,7 +62,7 @@ public class SaveCaveKubby : MonoBehaviour
     enabl = false;
     playerParent.SetActive(true);
     player.transform.position = anim.transform.position;
-    player.GetComponent<Rigidbody2D>().isKinematic = false;
+    player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
     ///player.GetComponent<BoxCollider2D>().enabled = true;
     player.GetComponent<Rigidbody2D>().AddForce(new Vector3(dropForce, 0, 0));
     anim.GetComponent<Animator>().Play("throw");

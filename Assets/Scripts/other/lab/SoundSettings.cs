@@ -78,12 +78,12 @@ public class SoundSettings : MonoBehaviour
 	void FixedUpdate()
 	{
 		volumeForText = volume * 10;
-		txt.text = volumeForText + "%";
+		if(txt != null) txt.text = volumeForText + "%";
 		realVol = volume / 10;
-		aud.volume = realVol;
+		if(aud != null) aud.volume = realVol;
 		if(imSound == true)
 		{
-			volume = par.GetComponent<SoundSettings>().volume;
+			if(par != null) volume = par.GetComponent<SoundSettings>().volume;
 		}
 		
 		if(imSound == false)

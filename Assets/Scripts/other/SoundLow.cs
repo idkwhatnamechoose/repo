@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class SoundLow : MonoBehaviour
 {
-	AudioSource audio;
+	AudioSource audioSource;
 	float pitchFloat;
 	public bool gettingLow = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        audio = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class SoundLow : MonoBehaviour
 			else
 			{
 				pitchFloat -= 0.5f * Time.fixedDeltaTime;
-			    audio.pitch = pitchFloat;
+			    GetComponent<AudioSource>().pitch = pitchFloat;
 			}
 			
 		}

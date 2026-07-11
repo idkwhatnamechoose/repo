@@ -19,7 +19,6 @@ public class PlayerOuch : MonoBehaviour
 			dir = vec.x;
 			
 			force = dir * coll.GetComponent<Damage>().forceThrow;
-			force = force;
 			Debug.Log("ai" + force);
 			transform.localPosition += transform.right * force * Time.deltaTime;
 		}

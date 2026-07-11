@@ -2,6 +2,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using System.Collections;
+#if ENABLE_INPUT_SYSTEM
+using UnityEngine.InputSystem;
+#endif
 public class Dialog : MonoBehaviour
 {
 	public Font fontEn;
@@ -15,14 +18,13 @@ public class Dialog : MonoBehaviour
 	public string[] context;
 	public string[] EnglishContext;
 	public string[] SpanishContext;
-	private int index = 0;
 	public int textCollection;
 	int current = 0;
 	public Text txt;
 	public float letterDelay = 0.1f;
 	public GameObject pl;
 	public GameObject dialogWindow;
-	AudioSource audio;
+	AudioSource audioSource;
 	public AudioClip mediaFile;
 	float pitchForAudio;
 	double d;
@@ -41,38 +43,57 @@ public class Dialog : MonoBehaviour
     {
 			///just a message
 
-      animatedUI.Play("idle");
+      if(animatedUI != null)
+      {
+          animatedUI.Play("idle");
+      }
 
-			lang = PlayerPrefs.GetString("lang");
-dialogWindow.SetActive(true);
-        pl = GameObject.FindGameObjectWithTag("Player");
-		audio = GetComponent<AudioSource>();
-		if(startRightNow == true)
-		{
-			txt.text = "test";
-			Next();
-		}
-		if(lang == "")
-		{
-			lang = "ru";
-		}
-    }
+		lang = PlayerPrefs.GetString("lang");
+	if(dialogWindow != null)
+	{
+		dialogWindow.SetActive(true);
+	}
+        if(txt != null) txt.text = "test";
+        Next();
+
+        if (lang == "")
+        {
+            lang = "ru";
+        }
+}
 
     // Update is called once per frame
     void Update()
     {
+      bool nextPressed = false;
+#if ENABLE_INPUT_SYSTEM
+      if(Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
+      {
+          nextPressed = true;
+      }
+      if(Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)
+      {
+          nextPressed = true;
+      }
+#endif
+#if ENABLE_LEGACY_INPUT_MANAGER
       if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton3))
+      {
+          nextPressed = true;
+      }
+#endif
+      if(nextPressed)
+      {
+          Next();
+      }
+			if(txt != null && txt.text == textToShowWarn)
 			{
-				Next();
-			}
-			if(txt.text == textToShowWarn)
-			{
-				nextWarn.SetActive(true);
-				mouth.Play("mouthIdle");
+				if(nextWarn != null) nextWarn.SetActive(true);
+				if(mouth != null) mouth.Play("mouthIdle");
 			}
 			else
 			{
-				nextWarn.SetActive(false);
+				if(nextWarn != null) nextWarn.SetActive(false);
 			}
     }
 	public void Click()
@@ -80,11 +101,14 @@ dialogWindow.SetActive(true);
 		endedDialog = false;
 		if(noImage == false)
 		{
-           animatedUI.Play("show"); 
+           if(animatedUI != null) animatedUI.Play("show"); 
 		}
 		else
 		{
-			animatedUI.Play("showNoImage"); 
+			if(animatedUI != null)
+			{
+				animatedUI.Play("showNoImage");
+			}
 		}
 		current = 0;
 		///dialogWindow.SetActive(true);
@@ -99,7 +123,7 @@ dialogWindow.SetActive(true);
 			{
 				if(noImage == false)
 				{
-                           animatedUI.Play("next");
+                           if(animatedUI != null) animatedUI.Play("next");
 				}
 				Next2();
 			}
@@ -110,7 +134,7 @@ dialogWindow.SetActive(true);
 			{
 				if(noImage == false)
 				{
-                           animatedUI.Play("next");
+                           if(animatedUI != null) animatedUI.Play("next");
 				}
 				Next2();
 			}
@@ -121,7 +145,7 @@ dialogWindow.SetActive(true);
 			{
 				if(noImage == false)
 				{
-                           animatedUI.Play("next");
+                           if(animatedUI != null) animatedUI.Play("next");
 				}
 				
 				Next2();
@@ -187,7 +211,7 @@ dialogWindow.SetActive(true);
 		{
 			///dialogWindow.SetActive(false);
 			endedDialog = true;
-			animatedUI.Play("hide");
+			if(animatedUI != null) animatedUI.Play("hide");
 			pl.GetComponent<UseHand>().use = false;
 			if(startCutsceneAfterTalk == true)
 			{
@@ -205,16 +229,16 @@ dialogWindow.SetActive(true);
 			textToShowWarn = text;
 		pitchForAudio = UnityEngine.Random.Range(0.7f, 1f);
 		double d = (double) pitchForAudio;
-		///audio.pitch = pitchForAudio;
+		///audioSource.pitch = pitchForAudio;
         int i = 0;
 
         while (i <= text.Length)
         {
 			pitchForAudio = UnityEngine.Random.Range(0.999f, 1f);
-			audio.PlayOneShot(mediaFile);
-			///audio.clip = mediaFile;
-			///audio.Play();
-			///audio.volume = pitchForAudio;
+			audioSource.PlayOneShot(mediaFile);
+			///audioSource.clip = mediaFile;
+			///audioSource.Play();
+			///audioSource.volume = pitchForAudio;
             txt.text = text.Substring(0, i);
             i++;
 

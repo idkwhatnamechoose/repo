@@ -34,7 +34,7 @@ public class AgroCleaner : MonoBehaviour
     {
         if(isAngry == true)
         {
-			rb.isKinematic = false;
+			rb.bodyType = RigidbodyType2D.Dynamic;
 			box.enabled = true;
         	transform.localPosition += transform.right * realSpeed * Time.fixedDeltaTime;
         	anim.SetBool("angry", true);
@@ -53,7 +53,7 @@ public class AgroCleaner : MonoBehaviour
         }
         if(isAngry == false)
         {
-			rb.isKinematic = true;
+			rb.bodyType = RigidbodyType2D.Kinematic;
 			box.enabled = false;
         	anim.SetBool("angry", false);
         	legs[1].SetActive(false);

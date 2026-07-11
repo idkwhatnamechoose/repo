@@ -35,7 +35,7 @@ public class Dialog2 : MonoBehaviour
 	GameObject previousText;
 	public GameObject text;
 	bool endedTalk = true;
-	public AudioSource audio;
+	public AudioSource audioSource;
 	float time;
 	public Text txt;
 	public AudioClip mediafile;
@@ -100,9 +100,9 @@ public class Dialog2 : MonoBehaviour
 				
 				warnToNext.SetActive(false);
 				time += 1 * Time.fixedDeltaTime;
-				if(time > 0.1 && noImage == true)
+					if(time > 0.1 && noImage == true)
 				{
-					audio.PlayOneShot(mediafile);
+					audioSource.PlayOneShot(mediafile);
 					///tantiate(audio, transform.position, transform.rotation);
 					time = 0;
 				}

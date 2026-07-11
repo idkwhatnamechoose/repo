@@ -11,7 +11,6 @@ public class Jump : MonoBehaviour
 	public BootsController boots;
 	bool floating = true;
 	float rbScale;
-	bool tryingToGetOutTheWater;
 	public float defaultGravityScale = 2f;
 	public float waterGravityScale = 0.5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,11 +26,9 @@ public class Jump : MonoBehaviour
     void Update()
     {
 		
-        if(Input.GetButtonDown("Jump"))
+		if(Input.GetButtonDown("Jump"))
 		{
-			tryingToGetOutTheWater = true;
-			JumpNow();
-			tryingToGetOutTheWater = true;
+   		 JumpNow();
 		}
 		if(floating == true)
 		{

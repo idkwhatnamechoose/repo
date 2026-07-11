@@ -69,7 +69,7 @@ public class VictoryWindow : MonoBehaviour
     }
     void Load()
     {
-      Application.LoadLevel(nextLevel);
+      UnityEngine.SceneManagement.SceneManager.LoadScene(nextLevel);
     }
     void ShowWindow()
     {

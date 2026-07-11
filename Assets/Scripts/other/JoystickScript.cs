@@ -11,7 +11,11 @@ public class JoystickScript : MonoBehaviour
 
         void Awake()
         {
-			Debug.Log("Connected joystics: " + Input.GetJoystickNames()[0]);
+			var joystickNames = Input.GetJoystickNames();
+			if (joystickNames.Length > 0)
+			{
+				Debug.Log("Connected joystics: " + joystickNames[0]);
+			}
 			
 			move = GetComponent<Movement>();
 			
@@ -40,11 +44,17 @@ public class JoystickScript : MonoBehaviour
 		}
 	public void OneSecondOfHeaven()
 	{
-		ds4Gamepad.SetLightBarColor(Color.red);
-		ds4Gamepad.SetLightBarColor(Color.red);
+		if (ds4Gamepad != null)
+		{
+			ds4Gamepad.SetLightBarColor(Color.red);
+			ds4Gamepad.SetLightBarColor(Color.red);
+			ds4Gamepad.SetLightBarColor(Color.red);
+		}
 		time = 0;
-		Gamepad.current.SetMotorSpeeds(0.123f, 0.234f);
-		ds4Gamepad.SetLightBarColor(Color.red);
+		if (Gamepad.current != null)
+		{
+			Gamepad.current.SetMotorSpeeds(0.123f, 0.234f);
+		}
 		resume = true;
 	}
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -76,27 +86,49 @@ public class JoystickScript : MonoBehaviour
 			move.staminaActivated = false;
 		}
 		
-		for (int i = 0; i < 4; i++)
-        {
-            if (Mathf.Abs(Input.GetAxis("Horizontal1")) > 0.2 ||
-                Mathf.Abs(Input.GetAxis("Vertical1")) > 0.2)
-            {
-                Debug.Log(Input.GetJoystickNames()[i] + " is moved");
-            }
-        }
+		// Try to detect joystick movement using standard axes
+		try
+		{
+			for (int i = 0; i < 4; i++)
+			{
+				try
+				{
+					if (Mathf.Abs(Input.GetAxis("Horizontal1")) > 0.2 ||
+					    Mathf.Abs(Input.GetAxis("Vertical1")) > 0.2)
+					{
+						if(i < Input.GetJoystickNames().Length)
+							Debug.Log(Input.GetJoystickNames()[i] + " is moved");
+					}
+				}
+				catch { }
+			}
+		}
+		catch { }
 		if(resume == true)
 		{
 			time += 1 * Time.deltaTime;
 			if(time > 0.5)
 		    {
-				ds4Gamepad.SetLightBarColor(Color.white);
-			   Gamepad.current.SetMotorSpeeds(0f, 0f);
+				if (ds4Gamepad != null)
+				{
+					ds4Gamepad.SetLightBarColor(Color.white);
+				}
+				if (Gamepad.current != null)
+				{
+					Gamepad.current.SetMotorSpeeds(0f, 0f);
+				}
 			   resume = false;
 		    }
 		    else
 			{
-				ds4Gamepad.SetLightBarColor(Color.red);
-				Gamepad.current.SetMotorSpeeds(0.123f, 0.234f);
+				if (ds4Gamepad != null)
+				{
+					ds4Gamepad.SetLightBarColor(Color.red);
+				}
+				if (Gamepad.current != null)
+				{
+					Gamepad.current.SetMotorSpeeds(0.123f, 0.234f);
+				}
 			}
 		}
 		

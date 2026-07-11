@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class SavesSystem : MonoBehaviour
 {
 	public string type = "level";
 	public Animator saveIcon;
-	public int slot = PlayerPrefs.GetInt("loadedSlot");
+	public int slot = 0;
 	public float loadedHealth;
 	string varSave1;
 	public int coins;
@@ -98,7 +99,7 @@ public class SavesSystem : MonoBehaviour
 	   loadScreen.SetActive(true);
        timerOn = true;
 	   timer = 0;
-	   Application.LoadLevel(levelName);	   
+	SceneManager.LoadScene(levelName);   
 	}
 	public void StartCustomLevel(int selected)
 	{
@@ -107,7 +108,7 @@ public class SavesSystem : MonoBehaviour
 	   loadScreen.SetActive(true);
        timerOn = true;
 	   timer = 0;
-	   Application.LoadLevel(levelName);
+	SceneManager.LoadScene(levelName);
 	}
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -163,7 +164,7 @@ public class SavesSystem : MonoBehaviour
 			savePath = "escapedLevels" + slot;
 			PlayerPrefs.SetInt(savePath, whatTheLevel);
 		}
-	    Application.LoadLevel(levelTitle + whatTheLevel);
+		SceneManager.LoadScene(levelTitle + whatTheLevel);
 		
 	}
     void OnTriggerEnter2D(Collider2D coll)
@@ -181,7 +182,7 @@ public class SavesSystem : MonoBehaviour
 			timer += 1 * Time.deltaTime;
 			if(timer > 1)
 			{
-				Application.LoadLevel("Level1");
+				SceneManager.LoadScene("Level1");
 				
 			}
 		}

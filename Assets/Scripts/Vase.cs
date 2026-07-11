@@ -3,7 +3,6 @@ using UnityEngine;
 public class Vase : MonoBehaviour
 {
 	public GameObject broken;
-	bool isGrounded = false;
 	float timer;
 	bool notOnTheFloor = false;
 	bool work = false;

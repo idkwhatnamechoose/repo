@@ -117,8 +117,11 @@ public class Health : MonoBehaviour
 
 
 			ReadyToShowHealthAnimate();
-			Gamepad.current.SetMotorSpeeds(0.123f, 0.234f);
-			Gamepad.current.SetMotorSpeeds(0f, 0f);
+			if (Gamepad.current != null)
+			{
+				Gamepad.current.SetMotorSpeeds(0.123f, 0.234f);
+				Gamepad.current.SetMotorSpeeds(0f, 0f);
+			}
 			joyst.OneSecondOfHeaven();
 			react.DamageUIAnimate(damagePower);
 
@@ -192,15 +195,18 @@ public class Health : MonoBehaviour
 			  ///Destroy(coll.gameObject.GetComponent<Damage>().parent);
         coll.gameObject.GetComponent<Damage>().Collided();
 
-				GetComponent<Rigidbody2D>().isKinematic = true;
+				GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
 				GetComponent<FakeKubby>().anim.Play("whatIsThatFakeKubby");
         GetComponent<FakeKubby>().dirTrig.SetActive(true);
 				GetComponent<FakeKubby>().maxTime = 2;
 				GetComponent<FakeKubby>().time = 0;
 			  Destroy(GetComponent<FakeKubby>().triggerDetector);
 				GetComponent<FakeKubby>().detect = true;
-				GetComponent<FakeKubby>().audio.Play();
-Gamepad.current.SetMotorSpeeds(0f, 0f);
+				GetComponent<FakeKubby>().GetComponent<AudioSource>().Play();
+				if (Gamepad.current != null)
+				{
+					Gamepad.current.SetMotorSpeeds(0f, 0f);
+				}
 			}
 			else
 			{

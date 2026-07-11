@@ -29,6 +29,6 @@ public int fastRestartEnabled;
     {
       Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-        Application.LoadLevel(sceneName);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
     }
 }

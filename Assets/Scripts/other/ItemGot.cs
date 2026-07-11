@@ -9,14 +9,14 @@ public class ItemGot : MonoBehaviour
   public Text nameTxt;
   public Text descriptionTxt;
   Animator an;
-  AudioSource audio;
+  AudioSource audioSource;
   Inventory inv;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
       inv = GetComponent<Inventory>();
         an = GetComponent<Animator>();
-        audio = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -26,9 +26,9 @@ public class ItemGot : MonoBehaviour
     }
     public void Show(AudioClip clipaudio)
     {
-      audio.clip = clipaudio;
+      audioSource.clip = clipaudio;
 
-      audio.Play();
+      audioSource.Play();
       an.Play("itemGotIdle");
       an.Play("itemGot");
       nameTxt.text = Name;

@@ -38,7 +38,7 @@ public class EnemyHealth : MonoBehaviour
 				      boss.SpawnFake();
 					  sayToBoss = false;
 				   }
-				   GetComponent<Rigidbody2D>().isKinematic = true;
+				   GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
 				   GetComponent<BoxCollider2D>().enabled = false;
 				}
 				

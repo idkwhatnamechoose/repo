@@ -6,9 +6,9 @@ public class CutscenesTrigger : MonoBehaviour
 	bool alreadyUsed = false;
 	
 	
-	void OnCollisionEnter2D(Collision coll)
+	void OnCollisionEnter2D(Collision2D coll)
 	{
-	    if(coll.gameObject.tag == "Player")
+		if(coll.gameObject.tag == "Player")
 		{
 		   Activate();
 		}

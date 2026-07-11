@@ -18,7 +18,7 @@ public class AnimatorFunct : MonoBehaviour
 		   fake.Boss();
 		   health.enabled = true;
 		   fakeHelper.enabled = true;
-		   rb.isKinematic = false;
+		   rb.bodyType = RigidbodyType2D.Dynamic;
 		}
 		else
 		{
@@ -45,7 +45,7 @@ public class AnimatorFunct : MonoBehaviour
 		
         if(animFunct != null)
 		{
-		   rb.isKinematic = true;
+		   rb.bodyType = RigidbodyType2D.Kinematic;
 		   fake.enabled = false;
 		   health.enabled = false;
 		}

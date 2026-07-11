@@ -41,7 +41,7 @@ public class Drag : MonoBehaviour
         obj.transform.rotation = dropPoint.rotation;
 		obj.GetComponent<BoxCollider2D>().enabled = true;
 		realForce = force * scale;
-		obj.GetComponent<Rigidbody2D>().isKinematic = false;
+		obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         obj.GetComponent<Rigidbody2D>().AddForce(new Vector3(realForce, forceY, 0));
 		Debug.Log("Бросили предмет!");
 		trig.GetComponent<BoxCollider2D>().enabled = true;
@@ -65,7 +65,7 @@ public class Drag : MonoBehaviour
 		trig.GetComponent<BoxCollider2D>().enabled = false;
 		obj = takeObj;
 		
-		obj.GetComponent<Rigidbody2D>().isKinematic = true;
+		obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
 	    obj.GetComponent<BoxCollider2D>().enabled = false;
 	    obj.transform.position = handPoint.position;
 	    obj.transform.rotation = handPoint.rotation;
@@ -75,7 +75,7 @@ public class Drag : MonoBehaviour
 	{
 		if(dragNow == true)
 		{
-			obj.GetComponent<Rigidbody2D>().isKinematic = true;
+			obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
 			obj.GetComponent<BoxCollider2D>().enabled = false;
 			obj.transform.position = handPoint.position;
 			obj.transform.rotation = handPoint.rotation;

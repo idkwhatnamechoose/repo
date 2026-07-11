@@ -4,7 +4,7 @@ public class Pause : MonoBehaviour
 {
   public bool isPaused;
   public GameObject gameOverPanel;
-  public AudioSource audio;
+  public AudioSource audioSource;
   public AudioSource audioPause;
   public AudioClip pauseSound;
   public AudioClip unpauseSound;
@@ -29,7 +29,7 @@ public class Pause : MonoBehaviour
 		  punches.GetComponent<Attack>().isActive = false;
 		  GetComponent<Jump>().enabled = false;
           Time.timeScale = 0f;
-          audio.Pause();
+          audioSource.Pause();
           audioPause.clip = pauseSound;
           audioPause.Play();
         }
@@ -43,7 +43,7 @@ public class Pause : MonoBehaviour
 		   GetComponent<Jump>().enabled = true;
 		  punches.GetComponent<Attack>().isActive = true;
           Time.timeScale = 1f;
-          audio.Play();
+          audioSource.Play();
           audioPause.clip = unpauseSound;
           audioPause.Play();
         }
@@ -59,7 +59,7 @@ public class Pause : MonoBehaviour
       isPaused = true;
       gameOverPanel.SetActive(true);
       Time.timeScale = 0f;
-      audio.Pause();
+      audioSource.Pause();
       audioPause.clip = pauseSound;
       audioPause.Play();
     }
@@ -68,12 +68,12 @@ public class Pause : MonoBehaviour
       Time.timeScale = 1f;
       Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-        Application.LoadLevel(sceneName);
+        SceneManager.LoadScene(sceneName);
     }
     public void QuitToMenu()
     {
         Time.timeScale = 1f;
-      Application.LoadLevel("Menu");
+      SceneManager.LoadScene("Menu");
     }
     public void Resume()
     {
@@ -82,6 +82,6 @@ public class Pause : MonoBehaviour
       Time.timeScale = 1f;
       audioPause.clip = unpauseSound;
       audioPause.Play();
-      audio.Play();
+      audioSource.Play();
     }
 }
