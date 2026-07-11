@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-RobotComp" at "2026-07-10T02:28:34.4712595Z"
 Built from '6000.4/staging' branch; Version is '6000.4.11f1 (b0a1d6caadd2) revision 11575766'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-RobotComp" at "2026-07-11T14:55:30.3422573Z"
 OS: 'Windows 11  (10.0.28020) Professional' Language: 'ru' Physical Memory: 32546 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-07-10T02:28:34Z
+Date: 2026-07-11T14:55:30Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.11f1\Editor\Unity.exe
@@ -19,7 +19,9 @@ C:/Users/RobotComp/Documents/GitHub/GSTOP/kubby_copy
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63396
+50487
+-licensingIpc
+LicenseClient-RobotComp
 -force-d3d12
 -job-worker-count
 7
@@ -66,24 +68,24 @@ C:/Users/RobotComp/Documents/GitHub/GSTOP/kubby_copy
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [26108]  Target information:
+Player connection [9304]  Target information:
 
-Player connection [26108]  * "[IP] 192.168.1.132 [Port] 0 [Flags] 2 [Guid] 2821315778 [EditorId] 2821315778 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [9304]  * "[IP] 192.168.1.132 [Port] 0 [Flags] 2 [Guid] 3220117762 [EditorId] 3220117762 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26108]  * "[IP] 26.130.159.199 [Port] 0 [Flags] 2 [Guid] 2821315778 [EditorId] 2821315778 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [9304]  * "[IP] 26.130.159.199 [Port] 0 [Flags] 2 [Guid] 3220117762 [EditorId] 3220117762 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26108]  * "[IP] 169.254.102.220 [Port] 0 [Flags] 2 [Guid] 2821315778 [EditorId] 2821315778 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [9304]  * "[IP] 169.254.102.220 [Port] 0 [Flags] 2 [Guid] 3220117762 [EditorId] 3220117762 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26108]  * "[IP] 192.168.187.1 [Port] 0 [Flags] 2 [Guid] 2821315778 [EditorId] 2821315778 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [9304]  * "[IP] 192.168.187.1 [Port] 0 [Flags] 2 [Guid] 3220117762 [EditorId] 3220117762 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26108]  * "[IP] 192.168.202.1 [Port] 0 [Flags] 2 [Guid] 2821315778 [EditorId] 2821315778 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [9304]  * "[IP] 192.168.202.1 [Port] 0 [Flags] 2 [Guid] 3220117762 [EditorId] 3220117762 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26108]  * "[IP] 192.168.160.1 [Port] 0 [Flags] 2 [Guid] 2821315778 [EditorId] 2821315778 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [9304]  * "[IP] 172.31.112.1 [Port] 0 [Flags] 2 [Guid] 3220117762 [EditorId] 3220117762 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26108]  * "[IP] 172.18.0.1 [Port] 0 [Flags] 2 [Guid] 2821315778 [EditorId] 2821315778 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [9304]  * "[IP] 172.18.0.1 [Port] 0 [Flags] 2 [Guid] 3220117762 [EditorId] 3220117762 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26108] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [26108] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [9304] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [9304] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -112,10 +114,11 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56276
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56432
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 [Licensing::Module] Licensing is not yet initialized.
@@ -124,19 +127,19 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.11f1/
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-RobotComp"
 [Licensing::IpcConnector] LicenseClient-RobotComp channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-RobotComp-6000.4.11" at "2026-07-10T02:28:43.0945664Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 15724, path: "C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-RobotComp-6000.4.11" at "2026-07-11T14:55:32.1855816Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 18804, path: "C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              ccfc364175f4431d9113aefc66a0e47a
-  Correlation Id:          7cf8a5828d0401538e3c83213cce4abf
-  External correlation Id: 3780069636347788080
+  Session Id:              5cb2cda2175743c880f756b3c20ec216
+  Correlation Id:          f0325127d8dd3bc55ff3b5e06ec4edeb
+  External correlation Id: 2034562795297137135
   Machine Id:              VGR0vGCEZQYWd+v8fDEQH64AY8c=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-RobotComp-6000.4.11" (connect: 0.01s, validation: 0.01s, handshake: 0.03s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-RobotComp-6000.4.11-notifications" at "2026-07-10T02:28:43.1421874Z"
-[Licensing::Module] Licensing Background thread has ended after 8.67s
-[Licensing::Module] Licensing is initialized (took 3.97s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-RobotComp-6000.4.11" (connect: 0.00s, validation: 0.00s, handshake: 0.01s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-RobotComp-6000.4.11-notifications" at "2026-07-11T14:55:32.196688Z"
+[Licensing::Module] Licensing Background thread has ended after 1.85s
+[Licensing::Module] Licensing is initialized (took 1.16s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 10171545388213-UnityPersXXXX
@@ -147,12 +150,13 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.11f1/
 [Licensing::Client] Successfully resolved entitlement details
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 4.003547 seconds.
+Registered in 1.165772 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for Android target not found
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -162,24 +166,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.854 seconds
-Domain Reload Profiling: 8878ms
-	BeginReloadAssembly (687ms)
-		CreateAndSetChildDomain (6ms)
-	RebuildCommonClasses (144ms)
-	RebuildNativeTypeToScriptingClass (45ms)
-	initialDomainReloadingComplete (4454ms)
-	LoadAllAssembliesAndSetupDomain (692ms)
-		LoadAssemblies (671ms)
-		AnalyzeDomain (570ms)
-			TypeCache.Refresh (568ms)
-				TypeCache.ScanAssembly (483ms)
-	FinalizeReload (2856ms)
+- Finished resetting the current domain, in  0.397 seconds
+Domain Reload Profiling: 1970ms
+	BeginReloadAssembly (109ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (1222ms)
+	LoadAllAssembliesAndSetupDomain (196ms)
+		LoadAssemblies (107ms)
+		AnalyzeDomain (187ms)
+			TypeCache.Refresh (185ms)
+				TypeCache.ScanAssembly (173ms)
+	FinalizeReload (398ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (956ms)
-			BeforeProcessingInitializeOnLoad (656ms)
-			ProcessInitializeOnLoadAttributes (235ms)
-			ProcessInitializeOnLoadMethodAttributes (113ms)
+			InitializePlatformSupportModulesInManaged (92ms)
+			BeforeProcessingInitializeOnLoad (77ms)
+			ProcessInitializeOnLoadAttributes (111ms)
+			ProcessInitializeOnLoadMethodAttributes (54ms)
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 ========================================================================
 Worker process is ready to serve import requests
@@ -191,6 +194,7 @@ Begin MonoManager ReloadAssembly
 Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
 Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
 Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
 Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
 Assembly Unity.InputSystem.TestFramework.dll at Library/ScriptAssemblies/Unity.InputSystem.TestFramework.dll not valid. Loading of assembly skipped.
 Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
@@ -212,6 +216,7 @@ Native extension for Android target not found
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -221,32 +226,48 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.752 seconds
-Domain Reload Profiling: 1298ms
-	BeginReloadAssembly (274ms)
-		DisableScriptedObjects (8ms)
-		CreateAndSetChildDomain (50ms)
-	RebuildCommonClasses (55ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (82ms)
-	LoadAllAssembliesAndSetupDomain (115ms)
-		LoadAssemblies (167ms)
-		AnalyzeDomain (88ms)
-			TypeCache.Refresh (61ms)
-				TypeCache.ScanAssembly (48ms)
-			BuildScriptInfoCaches (17ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (753ms)
+- Finished resetting the current domain, in  0.452 seconds
+Domain Reload Profiling: 743ms
+	BeginReloadAssembly (155ms)
+		DisableScriptedObjects (5ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (62ms)
+		LoadAssemblies (97ms)
+		AnalyzeDomain (47ms)
+			TypeCache.Refresh (32ms)
+				TypeCache.ScanAssembly (26ms)
+			BuildScriptInfoCaches (9ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (453ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
-			BeforeProcessingInitializeOnLoad (210ms)
-			ProcessInitializeOnLoadAttributes (227ms)
-			ProcessInitializeOnLoadMethodAttributes (67ms)
-			AfterProcessingInitializeOnLoad (17ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			BeforeProcessingInitializeOnLoad (100ms)
+			ProcessInitializeOnLoadAttributes (161ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
+			AfterProcessingInitializeOnLoad (7ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1583 unused Assets / (0.6 MB). Loaded Objects now: 2220.
-Memory consumption went from 82.3 MB to 81.7 MB.
-Total: 3.851000 ms (FindLiveObjects: 0.138700 ms CreateObjectMapping: 0.054400 ms MarkObjects: 3.264700 ms  DeleteObjects: 0.391200 ms)
+Unloading 1637 unused Assets / (0.7 MB). Loaded Objects now: 2275.
+Memory consumption went from 81.0 MB to 80.3 MB.
+Total: 4.172800 ms (FindLiveObjects: 0.166100 ms CreateObjectMapping: 0.068900 ms MarkObjects: 3.481900 ms  DeleteObjects: 0.453800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 859.677641 seconds.
+  path: Assets/Textures/Test/tut/Без названия424_20260509000420.png
+  importAddress: Guid(b5a974c4a67bcb74891e58980e43a6d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Test/tut/Без названия424_20260509000420.png using Guid(b5a974c4a67bcb74891e58980e43a6d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '89a1f36dd5a2b6b498a9824f2ad5613d') in 0.0787297 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=67717013d2a8233c4e0ed72111272d10 DependenciesID=623bd9e2b3e53e0c6f840f59ac924b96 StaticDependenciesID=bc5a129009da3f32a4dd1e6cb2fe892b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Textures/Test/tut/Без названия424_20260509000420.png
+  importAddress: Guid(b5a974c4a67bcb74891e58980e43a6d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Textures/Test/tut/Без названия424_20260509000420.png using Guid(b5a974c4a67bcb74891e58980e43a6d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e4e73e6a3e23f32a22b2bf079c891e4b') in 0.1077521 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=71cd11af28da5867bb9fd1ae82cb625e DependenciesID=25a5687a9a6599ccf2044ecbaf559c2c StaticDependenciesID=7854a03fe317f7befc77355944a8994e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 

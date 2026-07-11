@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.4/staging' branch; Version is '6000.4.11f1 (b0a1d6caadd2) revision 11575766'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-RobotComp" at "2026-07-10T02:28:34.4837817Z"
 OS: 'Windows 11  (10.0.28020) Professional' Language: 'ru' Physical Memory: 32546 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-RobotComp" at "2026-07-11T14:55:31.5571276Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-07-10T02:28:34Z
+Date: 2026-07-11T14:55:31Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.11f1\Editor\Unity.exe
@@ -19,7 +19,9 @@ C:/Users/RobotComp/Documents/GitHub/GSTOP/kubby_copy
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63396
+50487
+-licensingIpc
+LicenseClient-RobotComp
 -force-d3d12
 -job-worker-count
 7
@@ -66,24 +68,24 @@ C:/Users/RobotComp/Documents/GitHub/GSTOP/kubby_copy
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [26184]  Target information:
+Player connection [8988]  Target information:
 
-Player connection [26184]  * "[IP] 192.168.1.132 [Port] 0 [Flags] 2 [Guid] 31878501 [EditorId] 31878501 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8988]  * "[IP] 192.168.1.132 [Port] 0 [Flags] 2 [Guid] 1879359632 [EditorId] 1879359632 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26184]  * "[IP] 26.130.159.199 [Port] 0 [Flags] 2 [Guid] 31878501 [EditorId] 31878501 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8988]  * "[IP] 26.130.159.199 [Port] 0 [Flags] 2 [Guid] 1879359632 [EditorId] 1879359632 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26184]  * "[IP] 169.254.102.220 [Port] 0 [Flags] 2 [Guid] 31878501 [EditorId] 31878501 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8988]  * "[IP] 169.254.102.220 [Port] 0 [Flags] 2 [Guid] 1879359632 [EditorId] 1879359632 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26184]  * "[IP] 192.168.187.1 [Port] 0 [Flags] 2 [Guid] 31878501 [EditorId] 31878501 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8988]  * "[IP] 192.168.187.1 [Port] 0 [Flags] 2 [Guid] 1879359632 [EditorId] 1879359632 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26184]  * "[IP] 192.168.202.1 [Port] 0 [Flags] 2 [Guid] 31878501 [EditorId] 31878501 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8988]  * "[IP] 192.168.202.1 [Port] 0 [Flags] 2 [Guid] 1879359632 [EditorId] 1879359632 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26184]  * "[IP] 192.168.160.1 [Port] 0 [Flags] 2 [Guid] 31878501 [EditorId] 31878501 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8988]  * "[IP] 172.31.112.1 [Port] 0 [Flags] 2 [Guid] 1879359632 [EditorId] 1879359632 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26184]  * "[IP] 172.18.0.1 [Port] 0 [Flags] 2 [Guid] 31878501 [EditorId] 31878501 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8988]  * "[IP] 172.18.0.1 [Port] 0 [Flags] 2 [Guid] 1879359632 [EditorId] 1879359632 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1EE1CPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26184] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [26184] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8988] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8988] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -112,10 +114,11 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56360
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56812
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 [Licensing::Module] Licensing is not yet initialized.
@@ -124,19 +127,19 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.11f1/
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-RobotComp"
 [Licensing::IpcConnector] LicenseClient-RobotComp channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-RobotComp-6000.4.11" at "2026-07-10T02:28:42.7611707Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 15724, path: "C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-RobotComp-6000.4.11" at "2026-07-11T14:55:33.3758625Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 18804, path: "C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              2d4c58b87f3541a582f35aa7ceeede85
-  Correlation Id:          7cf8a5828d0401538e3c83213cce4abf
-  External correlation Id: 5233443947919530756
+  Session Id:              463113ecdda14a78b69791f2d4f78868
+  Correlation Id:          f0325127d8dd3bc55ff3b5e06ec4edeb
+  External correlation Id: 5886551764807166320
   Machine Id:              VGR0vGCEZQYWd+v8fDEQH64AY8c=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-RobotComp-6000.4.11" (connect: 0.01s, validation: 0.00s, handshake: 0.03s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-RobotComp-6000.4.11-notifications" at "2026-07-10T02:28:42.7951253Z"
-[Licensing::Module] Licensing Background thread has ended after 8.31s
-[Licensing::Module] Licensing is initialized (took 5.83s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-RobotComp-6000.4.11" (connect: 0.00s, validation: 0.00s, handshake: 0.01s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-RobotComp-6000.4.11-notifications" at "2026-07-11T14:55:33.3878806Z"
+[Licensing::Module] Licensing Background thread has ended after 1.83s
+[Licensing::Module] Licensing is initialized (took 1.11s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 10171545388213-UnityPersXXXX
@@ -147,12 +150,13 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.11f1/
 [Licensing::Client] Successfully resolved entitlement details
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.11f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 5.850314 seconds.
+Registered in 1.113336 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for Android target not found
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -162,23 +166,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.696 seconds
-Domain Reload Profiling: 7350ms
-	BeginReloadAssembly (273ms)
-	RebuildCommonClasses (63ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (5963ms)
-	LoadAllAssembliesAndSetupDomain (332ms)
-		LoadAssemblies (264ms)
-		AnalyzeDomain (313ms)
-			TypeCache.Refresh (311ms)
-				TypeCache.ScanAssembly (289ms)
-	FinalizeReload (699ms)
+- Finished resetting the current domain, in  0.394 seconds
+Domain Reload Profiling: 1946ms
+	BeginReloadAssembly (117ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (1175ms)
+	LoadAllAssembliesAndSetupDomain (211ms)
+		LoadAssemblies (114ms)
+		AnalyzeDomain (202ms)
+			TypeCache.Refresh (200ms)
+				TypeCache.ScanAssembly (188ms)
+	FinalizeReload (396ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (159ms)
-			BeforeProcessingInitializeOnLoad (160ms)
-			ProcessInitializeOnLoadAttributes (179ms)
-			ProcessInitializeOnLoadMethodAttributes (89ms)
+			InitializePlatformSupportModulesInManaged (91ms)
+			BeforeProcessingInitializeOnLoad (77ms)
+			ProcessInitializeOnLoadAttributes (108ms)
+			ProcessInitializeOnLoadMethodAttributes (53ms)
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 ========================================================================
 Worker process is ready to serve import requests
@@ -190,6 +194,7 @@ Begin MonoManager ReloadAssembly
 Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
 Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
 Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
 Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
 Assembly Unity.InputSystem.TestFramework.dll at Library/ScriptAssemblies/Unity.InputSystem.TestFramework.dll not valid. Loading of assembly skipped.
 Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
@@ -211,6 +216,7 @@ Native extension for Android target not found
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -220,92 +226,32 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.769 seconds
-Domain Reload Profiling: 1395ms
-	BeginReloadAssembly (351ms)
-		DisableScriptedObjects (8ms)
-		CreateAndSetChildDomain (76ms)
-	RebuildCommonClasses (56ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (81ms)
-	LoadAllAssembliesAndSetupDomain (119ms)
-		LoadAssemblies (219ms)
-		AnalyzeDomain (89ms)
-			TypeCache.Refresh (63ms)
-				TypeCache.ScanAssembly (49ms)
-			BuildScriptInfoCaches (16ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (770ms)
+- Finished resetting the current domain, in  0.421 seconds
+Domain Reload Profiling: 726ms
+	BeginReloadAssembly (159ms)
+		DisableScriptedObjects (5ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (68ms)
+		LoadAssemblies (101ms)
+		AnalyzeDomain (53ms)
+			TypeCache.Refresh (36ms)
+				TypeCache.ScanAssembly (29ms)
+			BuildScriptInfoCaches (11ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (421ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (31ms)
-			BeforeProcessingInitializeOnLoad (201ms)
-			ProcessInitializeOnLoadAttributes (242ms)
-			ProcessInitializeOnLoadMethodAttributes (62ms)
-			AfterProcessingInitializeOnLoad (18ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.23 seconds
+			InitializePlatformSupportModulesInManaged (24ms)
+			BeforeProcessingInitializeOnLoad (93ms)
+			ProcessInitializeOnLoadAttributes (139ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (7ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1583 unused Assets / (155.8 KB). Loaded Objects now: 2220.
-Memory consumption went from 84.5 MB to 84.4 MB.
-Total: 7.179400 ms (FindLiveObjects: 0.293400 ms CreateObjectMapping: 0.087400 ms MarkObjects: 6.181000 ms  DeleteObjects: 0.614500 ms)
+Unloading 1637 unused Assets / (0.7 MB). Loaded Objects now: 2275.
+Memory consumption went from 80.9 MB to 80.2 MB.
+Total: 3.895200 ms (FindLiveObjects: 0.151400 ms CreateObjectMapping: 0.040700 ms MarkObjects: 3.192500 ms  DeleteObjects: 0.508900 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 10460.073148 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
-  importAddress: Guid(125cb55b44b24c4393181402bc6200e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset using Guid(125cb55b44b24c4393181402bc6200e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'efd9e392e9ec751d7951b73c9a7a11b2') in 0.2192915 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=51f8df0a6e55747240747e89fa2bb54b DependenciesID=b5a980939ca7376edaea969642ef27ad StaticDependenciesID=11027f97180bccfb49e31315e98b652f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000454 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset
-  importAddress: Guid(5302535af1044152a457ed104f1f4b91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset using Guid(5302535af1044152a457ed104f1f4b91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '34b5eeb458b840712c9973a892b5d3cf') in 0.0220281 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=22a1bc05be94eda6a6bfe488754b1e50 DependenciesID=d8030cb7ec56bf01b0d1955bd23494e9 StaticDependenciesID=00ff533dc7c250cdb2b153788a08c919 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000820 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset
-  importAddress: Guid(0161d805a3764c089bef00bfe00793f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset using Guid(0161d805a3764c089bef00bfe00793f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3b66160c447efb745b0c94a094a909c0') in 0.0172052 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=954f50d65d96431ca84d372e5aa2b094 DependenciesID=20fef227e74c39a3ae5a7dab2f313477 StaticDependenciesID=57c98c6933bdeccd97168288712fdeb6 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001074 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset
-  importAddress: Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset using Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b738fce0971198dbd094bb75b90e1e86') in 0.0147084 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5da0ac90530ff4d2893e0fb47466dce8 DependenciesID=6fe96a9ae05c754dd5d42ccefca34c76 StaticDependenciesID=9ec531c2db8c2128c0f49b1076e5544d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000552 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
-  importAddress: Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset using Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fdae2521b06b707e77808a24be3c1dd7') in 0.0159021 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0a0c6cd363af7a0b1a22fb2625bca450 DependenciesID=46bab17e785bbcd5b506866e616946fd StaticDependenciesID=c83978d61e5622c5c4cea80b77644015 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004237 seconds.
-  path: Assets/kba.unity
-  importAddress: Guid(b0658da3af72f6e4d8ddbb081ffec359) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kba.unity using Guid(b0658da3af72f6e4d8ddbb081ffec359) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '54955f028b1ea3b4a5cb364c765938bd') in 0.0051037 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6749829242afd5ff31407fd94572b912 DependenciesID=d117d93cd85d8f6e0b01120b12f300a2 StaticDependenciesID=629ad0351e365a953c5904ffa50847d3 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002441 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  importAddress: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f8486e5abc139cdb915dd9e6df876d70') in 0.0164067 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=23292a9b8d1725c5e0b3150ade0b2b6b DependenciesID=920132326731e7c1aea347a0cae4ab53 StaticDependenciesID=346184333bdc965eb1a4c15d220f8448 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
